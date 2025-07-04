@@ -50,9 +50,12 @@ $students = [
     ['name' => 'นางสาววชิราญาณ์', 'lastname' => 'วชิระนาวิน', 'room' => '6/9']
 ];
 
+$targetStudent = $students[13];
+unset($students[13]);
+$students = array_values($students);
+array_unshift($students, $targetStudent);
 echo "<table border='1' cellpadding='10'>";
 echo "<tr><th>No.</th><th>ชื่อ</th><th>นามสกุล</th><th>ห้อง</th></tr>";
-echo "<tr><td>14</td><td>นายณัฐพล</td><td>ปลื้มกิจมงคล</td><td>6/9</td></tr>";
 $no = 1;
 foreach ($students as $student) {
     echo "<tr>";
