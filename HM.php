@@ -8,7 +8,6 @@
 <body>
 <?php
 $students = [
-    ['name' => 'นายณัฐพล', 'lastname' => 'ปลื้มกิจมงคล', 'room' => '6/9'],
     ['name' => 'นายจุฬาลักษณ์', 'lastname' => 'คงจรูญ', 'room' => '6/9'],
     ['name' => 'นายไตรคูน', 'lastname' => 'บุญนํา', 'room' => '6/9'],
     ['name' => 'นายวรนาศักดิ์', 'lastname' => 'เกียรติพิเชฐชื่น', 'room' => '6/9'],
@@ -22,6 +21,7 @@ $students = [
     ['name' => 'นายกรพิพัฒน์', 'lastname' => 'เล็กนาก', 'room' => '6/9'],
     ['name' => 'นายภัทรพล', 'lastname' => 'ชมพุฒ', 'room' => '6/9'],
     ['name' => 'นายศุภชัย', 'lastname' => 'รุ่งแสง', 'room' => '6/9'],
+    ['name' => 'นายณัฐพล', 'lastname' => 'ปลื้มกิจมงคล', 'room' => '6/9'],
     ['name' => 'นายพลัษฎฐ์', 'lastname' => 'ด่านอนันตสุข', 'room' => '6/9'],
     ['name' => 'นายเรืองวิทย์', 'lastname' => 'โชคชัย', 'room' => '6/9'],
     ['name' => 'นายจิรายุธ', 'lastname' => 'บูรณะจันทร์', 'room' => '6/9'],
@@ -52,7 +52,7 @@ $students = [
 
 echo "<table border='1' cellpadding='10'>";
 echo "<tr><th>No.</th><th>ชื่อ</th><th>นามสกุล</th><th>ห้อง</th></tr>";
-
+echo "<tr><td>14</td><td>นายณัฐพล</td><td>ปลื้มกิจมงคล</td><td>6/9</td></tr>";
 $no = 1;
 foreach ($students as $student) {
     echo "<tr>";
@@ -63,6 +63,7 @@ foreach ($students as $student) {
     echo "</tr>";
     $no++;
 }
+
 
 echo "</table>";
 ?>
